@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f310ff2e-e4bc-4391-a030-8d186712193f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="f310ff2e-e4bc-4391-a030-8d186712193f" name="Default Changelist" comment="commit progress">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Codestellation2020/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Codestellation2020/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controls.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controls.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,8 +18,8 @@
       <list>
         <option value="$PROJECT_DIR$/Assets/Scripts/camera.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Camera.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Controls.cs" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Controls.cs" />
       </list>
     </option>
   </component>
@@ -61,8 +62,24 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1604787223635</updated>
-      <workItem from="1604787227786" duration="1098000" />
+      <workItem from="1604787227786" duration="1177000" />
+      <workItem from="1604788449394" duration="973000" />
     </task>
+    <task id="LOCAL-00001" summary="add .gitignore">
+      <created>1604788358753</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1604788358753</updated>
+    </task>
+    <task id="LOCAL-00002" summary="commit progress">
+      <created>1604788391367</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1604788391367</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -72,5 +89,30 @@
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="add .gitignore" />
+    <MESSAGE value="commit progress" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit progress" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="873" y="342" key="#Plugins" timestamp="1604788420625">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="873" y="342" key="#Plugins/0.0.2560.1400@0.0.2560.1400" timestamp="1604788420625" />
+    <state x="1136" y="599" key="Github.ShareDialog" timestamp="1604788142052">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1136" y="599" key="Github.ShareDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1604788142052" />
+    <state x="1012" y="407" key="Github.UntrackedFilesDialog" timestamp="1604788170852">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1012" y="407" key="Github.UntrackedFilesDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1604788170852" />
+    <state x="873" y="434" key="Vcs.Push.Dialog.v2" timestamp="1604788400502">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="873" y="434" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1604788400502" />
+    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup" timestamp="1604788408672">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1604788408672" />
   </component>
 </project>

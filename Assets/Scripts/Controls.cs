@@ -9,6 +9,7 @@ public class Controls : MonoBehaviour
     [SerializeField] private float torquePower = 1f;
     private Rigidbody _rigidbodyComponent;
     private bool _isGrounded;
+    private int _numCollisions;
     private float _horizontalInput;
 
     // Start is called before the first frame update
@@ -51,11 +52,15 @@ public class Controls : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
+        if (!(collision.GetContact(0).point.y < _rigidbodyComponent.position.y)) return;
+        _numCollisions += 1;
         _isGrounded = true;
     }
 
     private void OnCollisionExit(Collision collision)
     {
-        _isGrounded = false;
+        _numCollisions -= 1;
+        if (_numCollisions == 0)
+            _isGrounded = false;
     }
 }
