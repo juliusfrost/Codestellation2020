@@ -19,9 +19,15 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f310ff2e-e4bc-4391-a030-8d186712193f" name="Default Changelist" comment="upload">
+    <list default="true" id="f310ff2e-e4bc-4391-a030-8d186712193f" name="Default Changelist" comment="fix jump collision">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/StompableEnemy.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/StompableEnemy.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/WalkAroundAI.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/WalkAroundAI.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Codestellation2020/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Codestellation2020/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Codestellation2020/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Codestellation2020/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controls.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controls.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,8 +40,11 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="mock://C:/Users/Julius/Documents/GitHub/Codestellation2020/Assets/Prefabs/Player.prefab" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/Julius/Documents/GitHub/Codestellation2020/Assets/Scripts/Controls.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/Julius/Documents/GitHub/Codestellation2020/ProjectSettings/TagManager.asset" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/Julius/Documents/GitHub/Codestellation2020/Assets/Scenes/SampleScene.unity" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/Julius/Documents/GitHub/Codestellation2020/Assets/Scripts/Controls.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/Julius/Documents/GitHub/Codestellation2020/Assets/Scripts/Controls.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/Julius/Documents/GitHub/Codestellation2020/Assets/Prefabs/Player.prefab" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -44,6 +53,9 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Camera.cs" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controls.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Tablet.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/StompableEnemy.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/WalkAroundAI.cs" />
       </list>
     </option>
   </component>
@@ -94,7 +106,7 @@
       <option name="presentableId" value="Default" />
       <updated>1604787223635</updated>
       <workItem from="1604787227786" duration="1177000" />
-      <workItem from="1604788449394" duration="6363000" />
+      <workItem from="1604788449394" duration="10057000" />
     </task>
     <task id="LOCAL-00001" summary="add .gitignore">
       <created>1604788358753</created>
@@ -131,7 +143,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604798486644</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="fix jump collision">
+      <created>1604800444606</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1604800444606</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -156,7 +175,8 @@
     <MESSAGE value="commit progress" />
     <MESSAGE value="fix bug with multiple collisions" />
     <MESSAGE value="upload" />
-    <option name="LAST_COMMIT_MESSAGE" value="upload" />
+    <MESSAGE value="fix jump collision" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix jump collision" />
   </component>
   <component name="WindowStateProjectService">
     <state x="873" y="342" key="#Plugins" timestamp="1604788420625">
@@ -175,10 +195,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="782" y="346" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1604789562098" />
-    <state x="873" y="434" key="Vcs.Push.Dialog.v2" timestamp="1604798490601">
+    <state x="873" y="434" key="Vcs.Push.Dialog.v2" timestamp="1604800448654">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="873" y="434" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1604798490601" />
+    <state x="873" y="434" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1604800448654" />
     <state x="943" y="315" width="672" height="678" key="search.everywhere.popup" timestamp="1604788408672">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
