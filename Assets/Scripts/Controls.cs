@@ -5,7 +5,7 @@ public class Controls : MonoBehaviour
 {
     private float x;
     private float y;
-    private int lives = 3;
+    public int lives = 3;
     private bool _jump;
     [SerializeField] private float jumpPower = 5;
     [SerializeField] private float torquePower = 1f;
@@ -40,14 +40,19 @@ public class Controls : MonoBehaviour
         }
     }
 
+    public void Death()
+    {
+        lives--;
+
+        transform.position = new Vector3(x, y, 0);
+    }
+
     // called every physics update
     private void FixedUpdate()
     {
         if (transform.position.y < -3.0f)
         {
-            lives--;
-
-            transform.position = new Vector3(x, y, 0);
+            Death();
         }
 
         if (_jump)
