@@ -4,8 +4,8 @@ using UnityEngine.SceneManagement;
 
 public class Controls : MonoBehaviour
 {
-    private float x;
-    private float y;
+    private float _startX;
+    private float _startY;
     public int lives = 3;
     private bool _jump;
     [SerializeField] private float jumpPower = 5;
@@ -18,8 +18,8 @@ public class Controls : MonoBehaviour
     private void Start()
     {
         var position = transform.position;
-        x = position.x;
-        y = position.y;
+        _startX = position.x;
+        _startY = position.y;
 
         lives = 3;
         _rigidbodyComponent = GetComponent<Rigidbody>();
@@ -45,7 +45,7 @@ public class Controls : MonoBehaviour
     {
         lives--;
 
-        transform.position = new Vector3(x, y, 0);
+        transform.position = new Vector3(_startX, _startY, 0);
     }
 
     // called every physics update
