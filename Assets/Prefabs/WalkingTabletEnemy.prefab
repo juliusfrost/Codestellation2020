@@ -62,7 +62,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 8426bc393c9902d4e90243885016f8c1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -126,7 +126,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   walkSeconds: 5
-  torquePower: 0.1
+  torquePower: 1
 --- !u!114 &1422417400944442368
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -139,4 +139,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c033caae2ab46adb194169cfdd1dbe0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stompThreshold: 0.1
+  stompThreshold: 0
