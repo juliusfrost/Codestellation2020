@@ -20,9 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f310ff2e-e4bc-4391-a030-8d186712193f" name="Default Changelist" comment="upload">
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Codestellation2020/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Codestellation2020/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controls.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controls.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +94,7 @@
       <option name="presentableId" value="Default" />
       <updated>1604787223635</updated>
       <workItem from="1604787227786" duration="1177000" />
-      <workItem from="1604788449394" duration="4561000" />
+      <workItem from="1604788449394" duration="6363000" />
     </task>
     <task id="LOCAL-00001" summary="add .gitignore">
       <created>1604788358753</created>
@@ -125,7 +124,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604797879851</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="upload">
+      <created>1604798486644</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1604798486644</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -169,10 +175,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="782" y="346" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1604789562098" />
-    <state x="873" y="434" key="Vcs.Push.Dialog.v2" timestamp="1604797883173">
+    <state x="873" y="434" key="Vcs.Push.Dialog.v2" timestamp="1604798490601">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="873" y="434" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1604797883173" />
+    <state x="873" y="434" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1604798490601" />
     <state x="943" y="315" width="672" height="678" key="search.everywhere.popup" timestamp="1604788408672">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>

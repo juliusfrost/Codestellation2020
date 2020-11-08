@@ -1,5 +1,7 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class Controls : MonoBehaviour
@@ -16,6 +18,8 @@ public class Controls : MonoBehaviour
     private void Start()
     {
         _rigidbodyComponent = GetComponent<Rigidbody>();
+        _numCollisions = 0;
+        _isGrounded = false;
     }
 
     // Update is called once per frame
@@ -39,23 +43,15 @@ public class Controls : MonoBehaviour
             _jump = false;
         }
 
+        _isGrounded = false;
+
         // Debug.Log(_horizontalInput);
         // rigidbodyComponent.AddRelativeTorque(new Vector3(0, horizontalInput * torquePower, 0), ForceMode.Impulse);
         _rigidbodyComponent.AddTorque(0, 0, -_horizontalInput * torquePower, ForceMode.VelocityChange);
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnCollisionStay(Collision other)
     {
-        if (!(collision.GetContact(0).point.y < _rigidbodyComponent.position.y)) return;
-        _numCollisions += 1;
-        _isGrounded = true;
-    }
-
-    private void OnCollisionExit(Collision collision)
-    {
-        if (!(collision.GetContact(0).point.y < _rigidbodyComponent.position.y)) return;
-        _numCollisions -= 1;
-        if (_numCollisions == 0)
-            _isGrounded = false;
+        _isGrounded = other.contacts.Any(contactPoint => contactPoint.point.y < _rigidbodyComponent.position.y);
     }
 }
