@@ -1,11 +1,9 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Camera : MonoBehaviour
 {
 
-    [SerializeField] private GameObject target;
+    private GameObject _player;
     [SerializeField] private float followScale = 0.01f;
     private Transform _cameraTransform;
     private Transform _targetTransform;
@@ -13,10 +11,8 @@ public class Camera : MonoBehaviour
     // Start is called before the first frame update
     private void Start()
     {
-        if (target == null) {
-            Debug.Log("target not set!");
-        }
-        _targetTransform = target.GetComponent<Transform>();
+        _player = GameObject.FindGameObjectWithTag("Player");
+        _targetTransform = _player.GetComponent<Transform>();
         _cameraTransform = GetComponent<Transform>();
     }
 

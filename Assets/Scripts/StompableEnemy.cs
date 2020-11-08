@@ -1,14 +1,13 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class StompableEnemy : MonoBehaviour
 {
     // if the velocity of the player is greater than this amount, then we say the player stomped on the enemy 
     [SerializeField] private float stompThreshold;
-    private GameObject player;
+    private GameObject _player;
     private void Start()
     {
-        player = GameObject.FindWithTag("Player");
+        _player = GameObject.FindWithTag("Player");
     }
 
     private void OnCollisionEnter(Collision other)
@@ -23,7 +22,7 @@ public class StompableEnemy : MonoBehaviour
             }
             else
             {
-                player.GetComponent<Controls>().Death();
+                _player.GetComponent<Controls>().Death();
             }
         }
     }
