@@ -5,7 +5,7 @@ using UnityEngine;
 public class Controls : MonoBehaviour
 {
     private bool _jump;
-    [SerializeField] private float jumpPower = 10;
+    [SerializeField] private float jumpPower = 5;
     [SerializeField] private float torquePower = 1f;
     private Rigidbody _rigidbodyComponent;
     private bool _isGrounded;
@@ -41,13 +41,7 @@ public class Controls : MonoBehaviour
 
         // Debug.Log(_horizontalInput);
         // rigidbodyComponent.AddRelativeTorque(new Vector3(0, horizontalInput * torquePower, 0), ForceMode.Impulse);
-        var angularVelocity = _rigidbodyComponent.angularVelocity;
-        angularVelocity = new Vector3(
-            angularVelocity.x,
-            angularVelocity.y,
-            angularVelocity.z - _horizontalInput * torquePower
-        );
-        _rigidbodyComponent.angularVelocity = angularVelocity;
+        _rigidbodyComponent.AddTorque(0, 0, -_horizontalInput * torquePower, ForceMode.VelocityChange);
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -59,6 +53,7 @@ public class Controls : MonoBehaviour
 
     private void OnCollisionExit(Collision collision)
     {
+        if (!(collision.GetContact(0).point.y < _rigidbodyComponent.position.y)) return;
         _numCollisions -= 1;
         if (_numCollisions == 0)
             _isGrounded = false;
