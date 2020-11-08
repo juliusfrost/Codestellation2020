@@ -1,5 +1,6 @@
 ﻿using System.Linq;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Controls : MonoBehaviour
 {
@@ -36,7 +37,7 @@ public class Controls : MonoBehaviour
         _horizontalInput = Input.GetAxis("Horizontal");
         if (lives == 0)
         {
-            Destroy(gameObject);
+            SceneManager.LoadScene("GameOverScreen");
         }
     }
 
