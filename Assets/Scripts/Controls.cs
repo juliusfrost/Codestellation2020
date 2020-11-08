@@ -1,24 +1,27 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Linq;
 using UnityEngine;
 
 public class Controls : MonoBehaviour
 {
+    private float x;
+    private float y;
+    private int lives = 3;
     private bool _jump;
     [SerializeField] private float jumpPower = 5;
     [SerializeField] private float torquePower = 1f;
     private Rigidbody _rigidbodyComponent;
     private bool _isGrounded;
-    private int _numCollisions;
     private float _horizontalInput;
 
     // Start is called before the first frame update
     private void Start()
     {
+        var position = transform.position;
+        x = position.x;
+        y = position.y;
+
+        lives = 3;
         _rigidbodyComponent = GetComponent<Rigidbody>();
-        _numCollisions = 0;
         _isGrounded = false;
     }
 
@@ -31,11 +34,22 @@ public class Controls : MonoBehaviour
         }
 
         _horizontalInput = Input.GetAxis("Horizontal");
+        if (lives == 0)
+        {
+            Destroy(gameObject);
+        }
     }
 
     // called every physics update
     private void FixedUpdate()
     {
+        if (transform.position.y < -3.0f)
+        {
+            lives--;
+
+            transform.position = new Vector3(x, y, 0);
+        }
+
         if (_jump)
         {
             if (_isGrounded)
@@ -54,6 +68,7 @@ public class Controls : MonoBehaviour
     {
         _isGrounded = other.contacts.Any(contactPoint => contactPoint.point.y < _rigidbodyComponent.position.y);
     }
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.layer == 10)
