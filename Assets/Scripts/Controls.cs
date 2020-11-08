@@ -54,4 +54,11 @@ public class Controls : MonoBehaviour
     {
         _isGrounded = other.contacts.Any(contactPoint => contactPoint.point.y < _rigidbodyComponent.position.y);
     }
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.layer == 10)
+        {
+            Destroy(other.gameObject);
+        }
+    }
 }
