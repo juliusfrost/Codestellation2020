@@ -4,11 +4,23 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: 
+  m_Scenes:
   - enabled: 1
     path: Assets/Scenes/VictoryScreen.unity
     guid: 811a0e743e9b48c4c933495d73439ad3
   - enabled: 1
     path: Assets/Scenes/GameOverScreen.unity
     guid: c465d8d2bfff2b343b89da8b8d0ed716
+  - enabled: 1
+    path: Assets/Scenes/Level 1.unity
+    guid: d65d201220d2545f4b0aacc5eb6916d2
+  - enabled: 1
+    path: Assets/Scenes/StartScreen.unity
+    guid: eac958ad53266da4f9665e722aae7a73
+  - enabled: 1
+    path: Assets/Scenes/InstructionScreen.unity
+    guid: 99c0ed8b626778d4da7ec65c3befd879
+  - enabled: 1
+    path: Assets/Scenes/PauseScreen.unity
+    guid: 5e39439a2c232ca4bafe5981015eb6b8
   m_configObjects: {}
