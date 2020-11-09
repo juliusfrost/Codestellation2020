@@ -686,6 +686,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4230257179963017062, guid: 3de1e776f1430484d848a5ff172e2e1e,
+        type: 3}
+      propertyPath: sceneName
+      value: VictoryScreen
+      objectReference: {fileID: 0}
     - target: {fileID: 8672586345331646747, guid: 3de1e776f1430484d848a5ff172e2e1e,
         type: 3}
       propertyPath: m_LocalPosition.x
